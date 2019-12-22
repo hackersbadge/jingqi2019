@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html style="font-size: 54.8px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0,
+    maximum-scale=1.0,
+    user-scalable=0">
+  <title>JQSEC</title>
+  <!-- import CSS -->
+  <link rel="stylesheet" href="res/element.css">
+  <link rel="stylesheet" href="res/display.css">
+  <link rel="stylesheet" href="res/main.css">
+  <script>
+        // (function(){var a=document.documentElement.clientWidth||document.body.clientWidth;if(a>460){a=460}else{if(a<320){a=320}}document.documentElement.style.fontSize=a/7.5+"px"})();
+        //动态为根元素设置字体大小
+function init () {
+    // 获取屏幕宽度
+    var a = document.documentElement.clientWidth||document.body.clientWidth
+    // 设置根元素字体大小。此时为宽的10等分
+    if(a>460){a=460}else{if(a<320){a=320}}document.documentElement.style.fontSize=a/7.5+"px"
+}
+
+//首次加载应用，设置一次
+init()
+// 监听手机窗口变化，重新设置
+window.addEventListener('resize', init)
+    </script>
+</head>
+<body>
+  <div id="app"><section class="el-container"><div class="navbar hidden-xs-only"><div class="navwarp"><div class="clearfix mynav"><div class="el-col el-col-5"><div class="grid-content bg-purple"><a><img src="res/logo.png" class="nav-logo"></a></div></div> <div class="el-col el-col-19"><ul class="nav"><li><a href="#introduce">峰会介绍</a></li><li><a href="#guest">峰会嘉宾</a></li><li><a href="#agenda">峰会议程</a></li><li><a href="#address">峰会地址</a></li><li><a href="#partner">合作伙伴</a></li></ul></div></div></div></div> <div class="hidden-sm-and-up mob-logo"><img src="res/logo.png" style="height: 30px; padding: 8px 20px;"></div> <main class="el-main"><div class="banner" style="position: relative;"><img src="res/zhubiaot.jpg" style="width: 100%;"> <div class="hidden-xs-only" style="position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);"><div class="banner-text"><p class="web-font">2019.12.5 ~ 12.6</p> <p class="web-font">北京·新云南皇冠假日酒店</p><p></p><p class="web-font"><a href="game.html">MiniGame</a></p></div> </div> <div class="hidden-sm-and-up" style="position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);"><div class="banner-text-xs"><p class="web-font">2019.12.5 ~ 12.6</p> <p class="web-font">北京·新云南皇冠假日酒店</p><p></p><p class="web-font"><a href="game.html">MiniGame</a></p></div></div></div> <a name="introduce"></a> <div class="introduce-text hidden-xs-only"><div class="section-title"><img src="res/fenghuijieshao.png"></div> <p class="web-font">2019京麒国际安全峰会（JD SECURITY SUMMIT，简称京麒安全峰会），是在主管部门的指导下，由京东安全主办，并联合业界和社区共同推出的安全产业和技术峰会，至今已经连续举办了六届。</p> <p class="web-font">2019京麒国际安全峰会，将以『捍卫信任』为核心主题，聚焦在互联网企业安全体系建设的视角，以产业互联网背景下的新技术、新风险的应对策略和方案，生态安全合作和创新共享，前瞻安全技术创新和安全人才建设与培养，为主要话题方向，邀请来自国内外的知名安全专家和企业安全高管，分享安全智慧，传递极客精神，为中国互联网安全建设提供一个世界级的交流研讨平台。</p> <p class="web-font">本届京麒安全峰会，将携手OWASP、看雪等国内外战略合作伙伴和安全智库，覆盖企业安全体系建设、生态安全、AIoT、数据安全、云安全、威胁情报共享、隐私保护等多个安全领域，打造面向未来网络发展的安全智慧盛宴！</p></div> <div class="introduce-text-xs hidden-sm-and-up"><div class="section-title"><img src="res/fenghuijieshao.png"></div> <p class="web-font intro-xs">2019京麒国际安全峰会（JD SECURITY SUMMIT，简称京麒安全峰会），是在主管部门的指导下，由京东安全主办，并联合业界和社区共同推出的安全产业和技术峰会，至今已经连续举办了六届。</p> <p class="web-font intro-xs">2019京麒国际安全峰会，将以『捍卫信任』为核心主题，聚焦在互联网企业安全体系建设的视角，以产业互联网背景下的新技术、新风险的应对策略和方案，生态安全合作和创新共享，前瞻安全技术创新和安全人才建设与培养，为主要话题方向，邀请来自国内外的知名安全专家和企业安全高管，分享安全智慧，传递极客精神，为中国互联网安全建设提供一个世界级的交流研讨平台。</p> <p class="web-font intro-xs">本届京麒安全峰会，将携手OWASP、看雪等国内外战略合作伙伴和安全智库，覆盖企业安全体系建设、生态安全、AIoT、数据安全、云安全、威胁情报共享、隐私保护等多个安全领域，打造面向未来网络发展的安全智慧盛宴！</p></div> <div class="box-intro"><div class="chartrow hidden-xs-only el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">培训课程</p> <p class="block-ibtro web-font">京麒国际安全峰会将邀请国际顶尖技术专家举办为期1天的Red Team高级攻击技术与系统化渗透培训，每一位参加培训课程的人都将实际动手操作，这将对技术提升有非常大的帮助。</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">安全领袖峰会</p> <p class="block-ibtro web-font">探讨安全行业趋势的CISO高峰论坛，聚焦在互联网企业安全体系建设的视角，以产业互联网背景下的新技术、新风险的应对策略和方案，生态安全合作和创新共享，前瞻安全技术创新和安全人才建设与培养，为主要话题方向，邀请来自国内外的知名安全专家和企业安全高管，分享安全智慧，传递极客精神，为中国互联网安全建设提供一个世界级的交流研讨平台。</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">安全技术峰会</p> <p class="block-ibtro web-font">一场纯粹的技术盛宴，会议探讨5G、AI、IoT、区块链等前沿领域的安全问题，展示最新研究成果，届时来自checkr1an战队的ios安全专家、国际顶尖黑客、佐治亚大学、南洋理工大学教授将共同用技术“捍卫信任”。</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">OWASP企业安全论坛</p> <p class="block-ibtro web-font">众所周知，OWASP除了耳熟能详的TOP10，作为一个开源的、非盈利的全球性安全组织，致力于应用软件的安全研究，向社会和各行业、组织贡献了大量的安全标准、安全测试工具、安全指导手册等。OWASP企业安全专题论坛将以互联网甲方企业安全视角聚焦，在当前安全风险和合规背景下，分享企业安全运营和QWASP最新开源项目，为甲方安全的建设和运营奏响开源、建设、运营的交响曲。</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">京麒白帽盛典</p> <p class="block-ibtro web-font">京麒白帽盛典也是火石计划的年终收官活动，来自京东、腾讯、唯品会的安全专家，共同为观众呈现一场集技术、趣味、娱乐为一身的白帽盛典。</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">互联网安全城市巡回赛北京站</p> <p class="block-ibtro web-font">由京东安全联合i春秋共同举办的互联网安全城市巡回赛，汇聚10支顶尖白帽团队，在现场深度挖掘6家SRC漏洞。全国TOP50白帽子齐聚京城，3小时的巅峰极客对决，年度最值得期待的赛事，豪华的白帽子阵容，尽在2019京麒国际安全峰会！</p></div></div><div class="el-col el-col-24 el-col-sm-8" style="padding-left: 20px; padding-right: 20px;"><div class="intro-block"><p class="block-title web-font">极客Village</p> <p class="block-ibtro web-font">打破常规、拒绝套路，这里为大开脑洞的极客们准备了各种酷炫的智能设备，你可以拿起电烙铁制作自己的专属硬件，尽情探索Badge中的神秘功能，甚至操作机器人在墙壁上作画。</p></div></div></div> <div class="chartrow hidden-sm-and-up el-row"><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">培训课程</p> <p class="block-ibtro web-font" style="font-size: 13px;">京麒国际安全峰会将邀请国际顶尖技术专家举办为期1天的Red Team高级攻击技术与系统化渗透培训，每一位参加培训课程的人都将实际动手操作，这将对技术提升有非常大的帮助。</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">安全领袖峰会</p> <p class="block-ibtro web-font" style="font-size: 13px;">探讨安全行业趋势的CISO高峰论坛，聚焦在互联网企业安全体系建设的视角，以产业互联网背景下的新技术、新风险的应对策略和方案，生态安全合作和创新共享，前瞻安全技术创新和安全人才建设与培养，为主要话题方向，邀请来自国内外的知名安全专家和企业安全高管，分享安全智慧，传递极客精神，为中国互联网安全建设提供一个世界级的交流研讨平台。</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">安全技术峰会</p> <p class="block-ibtro web-font" style="font-size: 13px;">一场纯粹的技术盛宴，会议探讨5G、AI、IoT、区块链等前沿领域的安全问题，展示最新研究成果，届时来自checkr1an战队的ios安全专家、国际顶尖黑客、佐治亚大学、南洋理工大学教授将共同用技术“捍卫信任”。</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">OWASP企业安全论坛</p> <p class="block-ibtro web-font" style="font-size: 13px;">众所周知，OWASP除了耳熟能详的TOP10，作为一个开源的、非盈利的全球性安全组织，致力于应用软件的安全研究，向社会和各行业、组织贡献了大量的安全标准、安全测试工具、安全指导手册等。OWASP企业安全专题论坛将以互联网甲方企业安全视角聚焦，在当前安全风险和合规背景下，分享企业安全运营和QWASP最新开源项目，为甲方安全的建设和运营奏响开源、建设、运营的交响曲。</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">京麒白帽盛典</p> <p class="block-ibtro web-font" style="font-size: 13px;">京麒白帽盛典也是火石计划的年终收官活动，来自京东、腾讯、唯品会的安全专家，共同为观众呈现一场集技术、趣味、娱乐为一身的白帽盛典。</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">互联网安全城市巡回赛北京站</p> <p class="block-ibtro web-font" style="font-size: 13px;">由京东安全联合i春秋共同举办的互联网安全城市巡回赛，汇聚10支顶尖白帽团队，在现场深度挖掘6家SRC漏洞。全国TOP50白帽子齐聚京城，3小时的巅峰极客对决，年度最值得期待的赛事，豪华的白帽子阵容，尽在2019京麒国际安全峰会！</p></div></div><div class="el-col el-col-24 el-col-sm-24" style="padding: 0px 20px;"><div class="intro-block-xs"><p class="block-title web-font">极客Village</p> <p class="block-ibtro web-font" style="font-size: 13px;">打破常规、拒绝套路，这里为大开脑洞的极客们准备了各种酷炫的智能设备，你可以拿起电烙铁制作自己的专属硬件，尽情探索Badge中的神秘功能，甚至操作机器人在墙壁上作画。</p></div></div></div></div> <a name="guest"></a> <div class="conf-guest"><div class="section-title"><img src="res/fhjb.png"></div> <div class="chartrow hidden-xs-only el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/tony.png"> <p class="guest-name web-font">Tony Lee</p> <p class="guest-intro web-font">京东集团副总裁</p><p class="guest-intro web-font">京东首席信息安全专家</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/cs.png"> <p class="guest-name web-font">Carsten Scholz</p> <p class="guest-intro web-font">安联集团CISO</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/fqm.png"> <p class="guest-name web-font">符庆明</p> <p class="guest-intro web-font">京东集团副总裁</p><p class="guest-intro web-font">京东云基础研发部负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/yy.png"> <p class="guest-name web-font">于旸</p> <p class="guest-intro web-font">腾讯安全玄武实验室负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/wq.png"> <p class="guest-name web-font">王琦</p> <p class="guest-intro web-font">GeekPwn活动发起和创办人</p><p class="guest-intro web-font">碁震KEEN创始人兼CEO</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/mj.png"> <p class="guest-name web-font">马杰</p> <p class="guest-intro web-font">百度安全总经理</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/lyc.png"> <p class="guest-name web-font">蔺毅翀</p> <p class="guest-intro web-font">滴滴信息安全负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/lk.png"> <p class="guest-name web-font">李康</p> <p class="guest-intro web-font">AI安全专家</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/zx.png"> <p class="guest-name web-font">张旭</p> <p class="guest-intro web-font">车好多集团信息安全部负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/zwm.png"> <p class="guest-name web-font">者文明</p> <p class="guest-intro web-font">京东物流研发架构部负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/naq.png"> <p class="guest-name web-font">Nguyen Anh Quynh</p> <p class="guest-intro web-font">新加坡南洋理工大学教授</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/wz.png"> <p class="guest-name web-font">王颉</p> <p class="guest-intro web-font">OWASP中国副主席</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/js.png"> <p class="guest-name web-font">Jimmy Su</p> <p class="guest-intro web-font">京东安全硅谷研究院负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/hzd.png"> <p class="guest-name web-font">韩紫东</p> <p class="guest-intro web-font">腾讯安全移动安全实验室安全研究员</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/qb.png"> <p class="guest-name web-font">秦波</p> <p class="guest-intro web-font">滴滴产品安全负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/zk.png"> <p class="guest-name web-font">张坤</p> <p class="guest-intro web-font">零氪信息安全负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/kj.png"> <p class="guest-name web-font">Kai Jern Lau</p> <p class="guest-intro web-font">京东牧者安全实验室负责人</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/dkg.png"> <p class="guest-name web-font">董凯歌</p> <p class="guest-intro web-font">智联招聘高级安全经理</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/cmd.png"> <p class="guest-name web-font">蔡铭达</p> <p class="guest-intro web-font">唯品会资深信息安全工程师</p></div></div><div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><div class="guest-block"><img src="res/lc.png"> <p class="guest-name web-font">李畅</p> <p class="guest-intro web-font">京东数科安全产品研发部总监</p></div></div></div> <div class="chartrow hidden-sm-and-up el-row" style="margin: 0px;"><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/tony.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">Tony Lee</p> <p class="guest-intro web-font" style="font-size: 10px;">京东集团副总裁</p><p class="guest-intro web-font" style="font-size: 10px;">京东首席信息安全专家</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/cs.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">Carsten Scholz</p> <p class="guest-intro web-font" style="font-size: 10px;">安联集团CISO</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/fqm.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">符庆明</p> <p class="guest-intro web-font" style="font-size: 10px;">京东集团副总裁</p><p class="guest-intro web-font" style="font-size: 10px;">京东云基础研发部负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/yy.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">于旸</p> <p class="guest-intro web-font" style="font-size: 10px;">腾讯安全玄武实验室负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/wq.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">王琦</p> <p class="guest-intro web-font" style="font-size: 10px;">GeekPwn活动发起和创办人</p><p class="guest-intro web-font" style="font-size: 10px;">碁震KEEN创始人兼CEO</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/mj.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">马杰</p> <p class="guest-intro web-font" style="font-size: 10px;">百度安全总经理</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/lyc.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">蔺毅翀</p> <p class="guest-intro web-font" style="font-size: 10px;">滴滴信息安全负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/lk.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">李康</p> <p class="guest-intro web-font" style="font-size: 10px;">AI安全专家</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/zx.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">张旭</p> <p class="guest-intro web-font" style="font-size: 10px;">车好多集团信息安全部负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/zwm.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">者文明</p> <p class="guest-intro web-font" style="font-size: 10px;">京东物流研发架构部负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/naq.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">Nguyen Anh Quynh</p> <p class="guest-intro web-font" style="font-size: 10px;">新加坡南洋理工大学教授</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/wz.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">王颉</p> <p class="guest-intro web-font" style="font-size: 10px;">OWASP中国副主席</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/js.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">Jimmy Su</p> <p class="guest-intro web-font" style="font-size: 10px;">京东安全硅谷研究院负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/hzd.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">韩紫东</p> <p class="guest-intro web-font" style="font-size: 10px;">腾讯安全移动安全实验室安全研究员</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/qb.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">秦波</p> <p class="guest-intro web-font" style="font-size: 10px;">滴滴产品安全负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/zk.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">张坤</p> <p class="guest-intro web-font" style="font-size: 10px;">零氪信息安全负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/kj.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">Kai Jern Lau</p> <p class="guest-intro web-font" style="font-size: 10px;">京东牧者安全实验室负责人</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/dkg.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">董凯歌</p> <p class="guest-intro web-font" style="font-size: 10px;">智联招聘高级安全经理</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/cmd.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">蔡铭达</p> <p class="guest-intro web-font" style="font-size: 10px;">唯品会资深信息安全工程师</p></div></div><div class="el-col el-col-8" style="padding-left: 10px; padding-right: 10px;"><div class="guest-block-xs"><img src="res/lc.png" style="width: 70px;"> <p class="guest-name web-font" style="font-size: 12px;">李畅</p> <p class="guest-intro web-font" style="font-size: 10px;">京东数科安全产品研发部总监</p></div></div></div></div> <a name="agenda"></a> <div class="conf-agenda"><div class="section-title"><img src="res/fhyc.png"></div> <div class="agenda-wrapper"><div class="agenda-grid hidden-xs-only"><div class="agenda-deep time1"><p>12月5日</p></div> <div class="agenda-deep time2"><p>12月6日 上午</p></div> <div class="agenda-deep time3"><p>12月6日 下午</p></div> <div class="agenda-com agenda1"><p>Red Team 终极训练营</p></div> <div class="agenda-com agenda2"><p>安全领袖峰会</p></div> <div class="agenda-com agenda3"><p>互联网安全城市巡回赛北京站</p></div> <div class="agenda-com agenda4"><p>安全技术峰会</p></div> <div class="agenda-com agenda5"><p>OWASP企业安全论坛</p></div> <div class="agenda-com agenda6"><p>JSRC白帽盛典</p></div> <div class="agenda-com agenda7"><p>Geek Village</p></div> <div class="agenda-arrow arrow1"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow2"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow3"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow4"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow5"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow6"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow7"><i class="el-icon-arrow-down"></i></div> <div class="agenda-arrow arrow8"><i class="el-icon-arrow-down"></i></div></div> <div class="hidden-sm-and-up xs-wrapper"><div class="agenda-grid-xs"><div class="agenda-deep time1"><p>12月5日</p></div> <div class="agenda-deep time2"><p>12月6日 上午</p></div> <div class="agenda-deep time3"><p>12月6日 下午</p></div> <div class="agenda-com agenda1"><p>Red Team 终极训练营</p></div> <div class="agenda-com agenda2"><p>安全领袖峰会</p></div> <div class="agenda-com agenda3"><p>互联网安全城市巡回赛</p></div> <div class="agenda-com agenda4"><p>安全技术峰会</p></div> <div class="agenda-com agenda5"><p>OWASP企业安全论坛</p></div> <div class="agenda-com agenda6"><p>JSRC白帽盛典</p></div> <div class="agenda-com agendabtm agenda7"><p>Geek Village</p></div> <div class="agenda-arrow arrow1"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow2"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow3"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow4"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow5"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow6"><i class="el-icon-arrow-up"></i></div> <div class="agenda-arrow arrow7"><i class="el-icon-arrow-down"></i></div> <div class="agenda-arrow arrow8"><i class="el-icon-arrow-down"></i></div></div></div></div></div> <div class="agenda-charts hidden-xs-only"><div class="charts-title"><p>安全领袖峰会 09:00 - 11:50，宴会厅B+C</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-3" style="padding-left: 20px; padding-right: 20px;"><ul class="time-list"><li>09:20 - 09:30</li> <li>09:30 - 09:40</li> <li>09:40 - 10:10</li> <li>10:10 - 10:40</li> <li>10:40 - 11:10</li> <li>11:10 - 11:50</li></ul></div> <div class="el-col el-col-2" style="padding-left: 20px; padding-right: 20px;"><img src="res/line2.png"></div> <div class="el-col el-col-7" style="padding-left: 20px; padding-right: 20px;"><ul><li>政府领导致辞</li> <li>京东集团领导致辞</li> <li>捍卫信任：下一代互联网安全基础设施的演进</li> <li>GDPR之下：欧洲企业的安全建设经验与实践</li> <li>企业安全趋势探讨</li> <li>Panel对话：新技术的安全变革与挑战</li></ul></div> <div class="el-col el-col-5" style="padding-left: 20px; padding-right: 20px;"><ul><li>&nbsp;</li> <li>&nbsp;</li> <li>Tony Lee</li> <li>Carsten Scholz</li> <li>蔺毅翀</li> <li>主持人：<br>于旸，腾讯安全玄武实验室负责人</li></ul></div> <div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><ul><li>&nbsp;</li> <li>&nbsp;</li> <li>京东集团副总裁/京东首席信息安全专家</li> <li>安联集团CISO</li> <li>滴滴信息安全负责人</li> <li>嘉宾：<br>Tony Lee，京东集团副总裁/京东首席信息安全专家<br>蔺毅翀，滴滴信息安全负责人<br>马杰，百度安全总经理<br> 王琦，GeekPwn活动发起和创办人/碁震KEEN创始人兼CEO<br>符庆明，京东集团副总裁/京东云基础研发部负责人</li></ul></div></div></div> <div class="agenda-charts-xs hidden-sm-and-up"><div class="charts-title"><p style="font-size: 14px;">安全领袖峰会 09:00 - 11:50，宴会厅B+C</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -1px; margin-right: -1px;"><div class="el-col el-col-6" style="padding-left: 1px; padding-right: 1px;"><ul class="time-list"><li><p>09:20 - 09:30</p></li> <li><p>09:30 - 09:40</p></li> <li><p>09:40 - 10:10</p></li> <li><p>10:10 - 10:40</p></li> <li><p>10:40 - 11:10</p></li> <li><p>11:10 - 11:50</p></li></ul></div> <div class="el-col el-col-1" style="padding-left: 1px; padding-right: 1px;"><img src="res/line6.png"></div> <div class="el-col el-col-17" style="padding-left: 1px; padding-right: 1px;"><ul><li><p>政府领导致辞</p><p>&nbsp;</p></li> <li><p>京东集团领导致辞</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>捍卫信任：下一代互联网安全基础设施的演进</p><p style="color: rgb(153, 153, 153);">Tony Lee&nbsp;京东集团副总裁/京东首席信息安全专家</p></li> <li><p>GDPR之下：欧洲企业的安全建设经验与实践</p><p style="color: rgb(153, 153, 153);">Carsten Scholz&nbsp;安联集团CISO</p></li> <li><p>企业安全趋势探讨</p><p style="color: rgb(153, 153, 153);">蔺毅翀&nbsp;滴滴信息安全负责人</p></li> <li style="height: 200px;"><p>Panel对话：新技术的安全变革与挑战</p><p style="color: rgb(153, 153, 153);">主持人：<br>于旸，腾讯安全玄武实验室负责人<br>嘉宾：<br>Tony Lee，京东集团副总裁/京东首席信息安全专家<br>蔺毅翀，滴滴信息安全负责人<br>马杰，百度安全总经理<br>王琦，GeekPwn活动发起和创办人/碁震KEEN创始人兼CEO<br>符庆明，京东集团副总裁/京东云基础研发部负责人</p></li></ul></div></div></div> <div class="agenda-charts hidden-xs-only"><div class="charts-title"><p>安全技术峰会，13:30 - 18:15，宴会厅B</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-3" style="padding-left: 20px; padding-right: 20px;"><ul class="time-list"><li>14:00 - 14:45</li> <li>14:45 - 15:30</li> <li>15:30 - 15:45</li> <li>15:45 - 16:30</li> <li>16:00 - 16:45</li> <li>​17:15 - 18:00</li></ul></div> <div class="el-col el-col-2" style="padding-left: 20px; padding-right: 20px;"><img src="res/line2.png"></div> <div class="el-col el-col-7" style="padding-left: 20px; padding-right: 20px;"><ul><li>AI系统核心资产安全风险</li> <li>构建安全可信的一体化供应链平台</li> <li>茶歇</li> <li>Monocerus：区块链智能合约动态分析工具</li> <li>移动生态安全探索与实践</li> <li>麒麟框架1.0：不是虚拟机的虚拟机</li></ul></div> <div class="el-col el-col-5" style="padding-left: 20px; padding-right: 20px;"><ul><li>李康</li> <li>者文明</li> <li>&nbsp;</li> <li>Nguyen Anh Quynh</li> <li>韩紫东</li> <li>Lau Kaijern</li></ul></div> <div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><ul><li>AI安全专家</li> <li>京东物流研发架构部负责人</li> <li>&nbsp;</li> <li>新加坡南洋理工大学教授</li> <li>腾讯安全移动安全实验室高级研究员</li> <li>京东牧者安全实验室负责人</li></ul></div></div></div> <div class="agenda-charts-xs hidden-sm-and-up"><div class="charts-title"><p style="font-size: 14px;">安全技术峰会，14:00 - 18:00，宴会厅B</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -5px; margin-right: -5px;"><div class="el-col el-col-6" style="padding-left: 5px; padding-right: 5px;"><ul class="time-list"><li>14:00 - 14:45</li> <li>14:45 - 15:30</li> <li>15:30 - 15:45</li> <li>15:45 - 16:30</li> <li>16:00 - 16:45</li> <li>​17:15 - 18:00</li></ul></div> <div class="el-col el-col-1" style="padding-left: 5px; padding-right: 5px;"><img src="res/line6.png"></div> <div class="el-col el-col-17" style="padding-left: 5px; padding-right: 5px;"><ul><li><p>AI系统核心资产安全风险</p><p style="color: rgb(153, 153, 153);">李康&nbsp;AI安全专家</p></li> <li><p>构建安全可信的一体化供应链平台</p><p style="color: rgb(153, 153, 153);">者文明&nbsp;京东物流研发架构部负责人</p></li> <li><p>茶歇</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>Monocerus：区块链智能合约动态分析工具</p><p style="color: rgb(153, 153, 153);">Nguyen Anh Quynh&nbsp;新加坡南洋理工大学教授</p></li> <li><p>移动生态安全探索与实践</p><p style="color: rgb(153, 153, 153);">韩紫东&nbsp;腾讯安全移动安全实验室高级研究员</p></li> <li><p>麒麟框架1.0：不是虚拟机的虚拟机</p><p style="color: rgb(153, 153, 153);">Lau Kaijern&nbsp;京东牧者安全实验室负责人</p></li></ul></div></div></div> <div class="agenda-charts hidden-xs-only"><div class="&#39;charts-title"><p>OWASP企业安全论坛，14:00 - 18:00，宴会厅C</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-3" style="padding-left: 20px; padding-right: 20px;"><ul class="time-list"><li>14:00 - 14:50</li> <li>14:50 - 15:30</li> <li>15:30 - 15:45</li> <li>16:10 - 16:30</li> <li>16:30 - 17:15</li> <li>17:15 - 18:00</li></ul></div> <div class="el-col el-col-2" style="padding-left: 20px; padding-right: 20px;"><img src="res/line2.png"></div> <div class="el-col el-col-7" style="padding-left: 20px; padding-right: 20px;"><ul><li>OWASP SAMM软件保障成熟度模型项目</li> <li>甲方SRC建设和运营之路</li> <li>茶歇</li> <li>密码学与数据安全体系建设</li> <li>车好多安全运营实践</li> <li>OWASP ProActive Controls软件开发主动控制项目</li></ul></div> <div class="el-col el-col-5" style="padding-left: 20px; padding-right: 20px;"><ul><li>王颉</li> <li>董凯歌</li> <li>&nbsp;</li> <li>李畅</li> <li>张旭</li> <li>秦波</li></ul></div> <div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><ul><li>OWASP中国副主席兼四川区域负责人</li> <li>智联招聘高级安全经理</li> <li>&nbsp;</li> <li>京东数科安全产品研发部总监</li> <li>瓜子二手车信息安全负责人</li> <li>滴滴产品安全负责人</li></ul></div></div></div> <div class="agenda-charts-xs hidden-sm-and-up"><div class="&#39;charts-title"><p style="font-size: 14px;">OWASP企业安全论坛，14:00 - 18:00，宴会厅C</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -5px; margin-right: -5px;"><div class="el-col el-col-6" style="padding-left: 5px; padding-right: 5px;"><ul class="time-list"><li>14:00 - 14:50</li> <li>14:50 - 15:30</li> <li>15:30 - 15:45</li> <li>16:10 - 16:30</li> <li>16:30 - 17:15</li> <li>17:15 - 18:00</li></ul></div> <div class="el-col el-col-1" style="padding-left: 5px; padding-right: 5px;"><img src="res/line6.png"></div> <div class="el-col el-col-17" style="padding-left: 5px; padding-right: 5px;"><ul><li><p>OWASP SAMM软件保障成熟度模型项目</p><p style="color: rgb(153, 153, 153);">王颉&nbsp;OWASP中国副主席兼四川区域负责人</p></li> <li><p>甲方SRC建设和运营之路</p><p style="color: rgb(153, 153, 153);">董凯歌&nbsp;智联招聘高级安全经理</p></li> <li><p>茶歇</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>密码学与数据安全体系建设</p><p style="color: rgb(153, 153, 153);">李畅&nbsp;京东数科安全产品研发部总监</p></li> <li><p>车好多安全运营实践</p><p style="color: rgb(153, 153, 153);">张旭&nbsp;瓜子二手车信息安全负责人</p></li> <li><p>OWASP ProActive Controls软件开发主动控制项目</p><p style="color: rgb(153, 153, 153);">秦波&nbsp;滴滴产品安全负责人</p></li></ul></div></div></div> <div class="agenda-charts hidden-xs-only"><div class="&#39;charts-title"><p>京麒白帽盛典，13:30 - 18:00，宴会厅A</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -20px; margin-right: -20px;"><div class="el-col el-col-3" style="padding-left: 20px; padding-right: 20px;"><ul class="time-list"><li>13:30 - 14:00</li> <li>14:10 - 14:40</li> <li>14:50 - 15:20</li> <li>15:20 - 15:30</li> <li>15:30 - 15:50</li> <li>15:50 - 17:00</li> <li>17:00 - 18:00</li></ul></div> <div class="el-col el-col-2" style="padding-left: 20px; padding-right: 20px;"><img src="res/line1.png"></div> <div class="el-col el-col-7" style="padding-left: 20px; padding-right: 20px;"><ul><li>漫谈JSRC安全应急响应</li> <li>企业应用容器化的攻与防</li> <li>移动端机器行为检测与对抗</li> <li>抽奖</li> <li>茶歇</li> <li>白帽王者荣耀邀请赛</li> <li>2019京麒白帽颁奖典礼</li></ul></div> <div class="el-col el-col-5" style="padding-left: 20px; padding-right: 20px;"><ul><li>陈靖远</li> <li>Near</li> <li>蔡铭达</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li></ul></div> <div class="el-col el-col-6" style="padding-left: 20px; padding-right: 20px;"><ul><li>京东安全应急响应团队高级工程师</li> <li>TSRC &amp; 腾讯蓝军高级安全工程师</li> <li>唯品会资深信息安全工程师</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li> <li>&nbsp;</li></ul></div></div></div> <div class="agenda-charts-xs hidden-sm-and-up"><div class="&#39;charts-title"><p style="font-size: 14px;">京麒白帽盛典，13:30 - 18:00，宴会厅A</p> <img src="res/anquanlxline.png" style="width: 100%;"></div> <div class="chartrow el-row" style="margin-left: -5px; margin-right: -5px;"><div class="el-col el-col-6" style="padding-left: 5px; padding-right: 5px;"><ul class="time-list"><li>13:30 - 14:00</li> <li>14:10 - 14:40</li> <li>14:50 - 15:20</li> <li>15:20 - 15:30</li> <li>15:30 - 15:50</li> <li>15:50 - 17:00</li> <li>17:00 - 18:00</li></ul></div> <div class="el-col el-col-1" style="padding-left: 5px; padding-right: 5px;"><img src="res/line7.png"></div> <div class="el-col el-col-17" style="padding-left: 5px; padding-right: 5px;"><ul><li><p>漫谈JSRC安全应急响应</p><p style="color: rgb(153, 153, 153);">陈靖远&nbsp;京东安全应急响应团队高级工程师</p></li> <li><p>企业应用容器化的攻与防</p><p style="color: rgb(153, 153, 153);">Near&nbsp;TSRC &amp; 腾讯蓝军高级安全工程师</p></li> <li><p>移动端机器行为检测与对抗</p><p style="color: rgb(153, 153, 153);">蔡铭达&nbsp;唯品会资深信息安全工程师</p></li> <li><p>抽奖</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>茶歇</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>白帽王者荣耀邀请赛</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li> <li><p>2019京麒白帽颁奖典礼</p><p style="color: rgb(153, 153, 153);">&nbsp;</p></li></ul></div></div></div> <a name="ticket"></a> <div class="conf-ticket"><div class="section-title"><img src="res/fhgp.png"></div> <div class="ticket-wrapper"><div class="ticket-grid hidden-xs-only"><div class="type1"><p></p></div> <div class="ticket-com ticketsolo type3"><p>培训票(单独售票)</p></div> <div class="ticket-com type4"><p>峰会票</p></div> <div class="ticket-com type5"><p>企业级VIP</p></div> <div class="ticket-com type6"><p>嘉宾票</p></div> <div class="ticket-com type7"><p>参会票</p></div> <div class="ticket-com ticket1"><p>票价</p></div> <div class="ticket-com ticket2"><p>¥2499</p></div> <div class="ticket-com ticket3"><p>¥1288</p></div> <div class="ticket-com ticket4"><p>¥349</p></div> <div class="ticket-com ticket5"><p>¥199</p></div> <div class="ticket-com event1"><p>OWASP技术培训</p></div> <div class="ticket-com event2"><p>主会场(6日)</p></div> <div class="ticket-com event3"><p>VIP专属礼品</p></div> <div class="ticket-com event4"><p>京麒纪念T恤</p></div> <div class="ticket-com event5"><p>精美伴手礼</p></div> <div class="ticket-com event6"><p>峰会官方资料</p></div> <div class="ticket-com event7"><p>自助午餐(6日)</p></div> <div class="ticket-com event8"><p>专属签到通道</p></div> <div class="0 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="1 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="2 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="3 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="4 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="5 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="6 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="7 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="8 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="9 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="10 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="11 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="12 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="13 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="14 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="15 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="16 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="17 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="18 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="19 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="20 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="21 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="22 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="23 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="24 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="25 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="26 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="27 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="28 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="29 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="30 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="31 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div></div> <div class="hidden-sm-and-up xs-wrapper"><div class="ticket-grid-xs"><div class="type1"><p></p></div> <div class="type3 ticket-com ticketsolo"><p>培训票(单独售票)</p></div> <div class="ticket-com type4"><p>峰会票</p></div> <div class="ticket-com type5"><p>VIP</p></div> <div class="ticket-com type6"><p>嘉宾票</p></div> <div class="ticket-com type7"><p>参会票</p></div> <div class="ticket-com ticket1"><p>票价</p></div> <div class="ticket-com ticket2"><p>¥2499</p></div> <div class="ticket-com ticket3"><p>¥1288</p></div> <div class="ticket-com ticket4"><p>¥349</p></div> <div class="ticket-com ticket5"><p>¥199</p></div> <div class="ticket-com event1"><p>OWASP技术培训</p></div> <div class="ticket-com event2"><p>主会场(6日)</p></div> <div class="ticket-com event3"><p>VIP专属礼品</p></div> <div class="ticket-com event4"><p>京麒纪念T恤</p></div> <div class="ticket-com event5"><p>精美伴手礼</p></div> <div class="ticket-com event6"><p>峰会官方资料</p></div> <div class="ticket-com event7"><p>自助午餐(6日)</p></div> <div class="ticket-com event8"><p>专属签到通道</p></div> <div class="0 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="1 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="2 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="3 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="4 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="5 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="6 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="7 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="8 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="9 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="10 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="11 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="12 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="13 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="14 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="15 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="16 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="17 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="18 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="19 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="20 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="21 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="22 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="23 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="24 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="25 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="26 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="27 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="28 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="29 ticketdeep"><div><i class="el-icon-check"></i></div></div><div class="30 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div><div class="31 ticketdeep"><div style="display: none;"><i class="el-icon-check"></i></div></div></div></div> </div></div> <a name="address"></a> <div class="conf-address"><div class="section-title"><img src="res/fhdz.png"></div> <div class="address-wrapper hidden-xs-only"><img src="res/ditu.png"></div> <div class="address-wrapper hidden-sm-and-up"><img src="res/ditu.png" style="width: 100%;"></div></div> <div class="conf-review"> </div> <a name="partner"></a> <div class="conf-partner"><div class="section-title"><img src="res/hzhb.png"></div> <div class="hidden-xs-only"><img src="res/partner-pc.jpeg" style="width: 100%;"><p></p><p align="center" class="web-font"><a href="game.html">MiniGame</a></p><p></p></div> <div class="hidden-sm-and-up"><img src="res/partner-mob.jpeg" style="width: 100%;"><p></p><p align="center" class="web-font"><a href="game.html">MiniGame
+  <!-- import Vue before Element -->
+  <script src="res/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="res/element.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+          visible: false,
+          navList: [{
+            Title: '峰会介绍',
+            anchor: '#introduce'
+          },{
+            Title: '峰会嘉宾',
+            anchor: '#guest'
+          },{
+            Title: '峰会议程',
+            anchor: '#agenda'
+          },{
+            Title: '峰会购票',
+            anchor: '#ticket'
+          },{
+            Title: '峰会地址',
+            anchor: '#address'
+          },{
+            Title: '合作伙伴',
+            anchor: '#partner'
+          }],
+          introData: [{
+            id: 1,
+            title: '培训课程',
+            content: '京麒国际安全峰会将邀请国际顶尖技术专家举办为期1天的Red Team高级攻击技术与系统化渗透培训，每一位参加培训课程的人都将实际动手操作，这将对技术提升有非常大的帮助。'
+          }, {
+            id: 2,
+            title: '安全领袖峰会',
+            content: '探讨安全行业趋势的CISO高峰论坛，聚焦在互联网企业安全体系建设的视角，以产业互联网背景下的新技术、新风险的应对策略和方案，生态安全合作和创新共享，前瞻安全技术创新和安全人才建设与培养，为主要话题方向，邀请来自国内外的知名安全专家和企业安全高管，分享安全智慧，传递极客精神，为中国互联网安全建设提供一个世界级的交流研讨平台。'
+          }, {
+            id: 3,
+            title: '安全技术峰会',
+            content: '一场纯粹的技术盛宴，会议探讨5G、AI、IoT、区块链等前沿领域的安全问题，展示最新研究成果，届时来自checkr1an战队的ios安全专家、国际顶尖黑客、佐治亚大学、南洋理工大学教授将共同用技术“捍卫信任”。'
+          }, {
+            id: 4,
+            title: 'OWASP企业安全论坛',
+            content: '众所周知，OWASP除了耳熟能详的TOP10，作为一个开源的、非盈利的全球性安全组织，致力于应用软件的安全研究，向社会和各行业、组织贡献了大量的安全标准、安全测试工具、安全指导手册等。OWASP企业安全专题论坛将以互联网甲方企业安全视角聚焦，在当前安全风险和合规背景下，分享企业安全运营和QWASP最新开源项目，为甲方安全的建设和运营奏响开源、建设、运营的交响曲。'
+          }, {
+            id: 5,
+            title: '京麒白帽盛典',
+            content: '京麒白帽盛典也是火石计划的年终收官活动，来自京东、腾讯、唯品会的安全专家，共同为观众呈现一场集技术、趣味、娱乐为一身的白帽盛典。'
+          }, {
+            id: 6,
+            title: '互联网安全城市巡回赛北京站',
+            content: '由京东安全联合i春秋共同举办的互联网安全城市巡回赛，汇聚10支顶尖白帽团队，在现场深度挖掘6家SRC漏洞。全国TOP50白帽子齐聚京城，3小时的巅峰极客对决，年度最值得期待的赛事，豪华的白帽子阵容，尽在2019京麒国际安全峰会！'
+          }, {
+            id: 7,
+            title: '极客Village',
+            content: '打破常规、拒绝套路，这里为大开脑洞的极客们准备了各种酷炫的智能设备，你可以拿起电烙铁制作自己的专属硬件，尽情探索Badge中的神秘功能，甚至操作机器人在墙壁上作画。'
+          }, ],
+          guestData: [{
+            id: 'g2',
+            headImg: './resource/images/tony.png',
+            name: 'Tony Lee',
+            intro: ['京东集团副总裁', '京东首席信息安全专家']
+          }, {
+            id: 'g4',
+            headImg: './resource/images/cs.png',
+            name: 'Carsten Scholz',
+            intro: ['安联集团CISO']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/fqm.png',
+            name: '符庆明',
+            intro: ['京东集团副总裁', '京东云基础研发部负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/yy.png',
+            name: '于旸',
+            intro: ['腾讯安全玄武实验室负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/wq.png',
+            name: '王琦',
+            intro: ['GeekPwn活动发起和创办人', '碁震KEEN创始人兼CEO']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/mj.png',
+            name: '马杰',
+            intro: ['百度安全总经理']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/lyc.png',
+            name: '蔺毅翀',
+            intro: ['滴滴信息安全负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/lk.png',
+            name: '李康',
+            intro: ['AI安全专家']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/zx.png',
+            name: '张旭',
+            intro: ['车好多集团信息安全部负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/zwm.png',
+            name: '者文明',
+            intro: ['京东物流研发架构部负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/naq.png',
+            name: 'Nguyen Anh Quynh',
+            intro: ['新加坡南洋理工大学教授']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/wz.png',
+            name: '王颉',
+            intro: ['OWASP中国副主席']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/js.png',
+            name: 'Jimmy Su',
+            intro: ['京东安全硅谷研究院负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/hzd.png',
+            name: '韩紫东',
+            intro: ['腾讯安全移动安全实验室安全研究员']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/qb.png',
+            name: '秦波',
+            intro: ['滴滴产品安全负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/zk.png',
+            name: '张坤',
+            intro: ['零氪信息安全负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/kj.png',
+            name: 'Kai Jern Lau',
+            intro: ['京东牧者安全实验室负责人']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/dkg.png',
+            name: '董凯歌',
+            intro: ['智联招聘高级安全经理']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/cmd.png',
+            name: '蔡铭达',
+            intro: ['唯品会资深信息安全工程师']
+          }, {
+            id: 'g1',
+            headImg: './resource/images/headImg/lc.png',
+            name: '李畅',
+            intro: ['京东数科安全产品研发部总监']
+          }],
+          itemlist: [{
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: ''
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: ''
+          }, {
+            content: '√'
+          }, {
+            content: ''
+          }, {
+            content: ''
+          }],
+          reviewlist: [{
+            id: 'r1',
+            url: './resource/images/review/Photo342.jpg'
+          }, {
+            id: 'r2',
+            url: './resource/images/review/Photo346.jpg'
+          }, {
+            id: 'r3',
+            url: './resource/images/review/Photo410.jpg'
+          }, {
+            id: 'r4',
+            url: './resource/images/review/Photo11.jpg'
+          }, {
+            id: 'r5',
+            url: './resource/images/review/Photo25.jpg'
+          }, {
+            id: 'r6',
+            url: './resource/images/review/Photo121.jpg'
+          }, {
+            id: 'r7',
+            url: './resource/images/review/Photo161.jpg'
+          }, {
+            id: 'r8',
+            url: './resource/images/review/Photo162.jpg'
+          }, {
+            id: 'r9',
+            url: './resource/images/review/Photo186.jpg'
+          }, {
+            id: 'r10',
+            url: './resource/images/review/Photo327.jpg'
+          }],
+          commulist: [{
+            id: 'c2',
+            url: './resource/images/logo/shequ/2.png'
+          }, {
+            id: 'c3',
+            url: './resource/images/logo/shequ/4.png'
+          }, {
+            id: 'c4',
+            url: './resource/images/logo/shequ/44.png'
+          }, {
+            id: 'c5',
+            url: './resource/images/logo/shequ/看雪.png'
+          }, {
+            id: 'c6',
+            url: './resource/images/logo/shequ/geekpwn.png'
+          }, {
+            id: 'c7',
+            url: './resource/images/logo/shequ/owasp.png'
+          }],
+          ecolist: [{
+            id: 'e1',
+            url: './resource/images/logo/Image 1.png'
+          }, {
+            id: 'e2',
+            url: './resource/images/logo/Image 2.png'
+          }, {
+            id: 'e3',
+            url: './resource/images/logo/Image 3.png'
+          }, {
+            id: 'e4',
+            url: './resource/images/logo/Image 4.png'
+          }, {
+            id: 'e5',
+            url: './resource/images/logo/Image 5.png'
+          }, {
+            id: 'e6',
+            url: './resource/images/logo/Image 6.png'
+          }, {
+            id: 'e7',
+            url: './resource/images/logo/Image 7.png'
+          }, {
+            id: 'e8',
+            url: './resource/images/logo/Image 8.png'
+          }, {
+            id: 'e9',
+            url: './resource/images/logo/Image 9.png'
+          }, {
+            id: 'e10',
+            url: './resource/images/logo/Image 10.png'
+          }, {
+            id: 'e11',
+            url: './resource/images/logo/Image 11.png'
+          }, {
+            id: 'e12',
+            url: './resource/images/logo/Image 12.png'
+          }, {
+            id: 'e13',
+            url: './resource/images/logo/Image 13.png'
+          }, {
+            id: 'e14',
+            url: './resource/images/logo/Image 14.png'
+          }, {
+            id: 'e15',
+            url: './resource/images/logo/Image 15.png'
+          }, {
+            id: 'e16',
+            url: './resource/images/logo/Image 16.png'
+          }, {
+            id: 'e17',
+            url: './resource/images/logo/Image 17.png'
+          }, {
+            id: 'e18',
+            url: './resource/images/logo/Image 18.png'
+          }],
+          medialist: [{
+            id: 'm1',
+            url: './resource/images/logo/meiti/Image 1.png'
+          }, {
+            id: 'm2',
+            url: './resource/images/logo/meiti/Image 2.png'
+          }, {
+            id: 'm3',
+            url: './resource/images/logo/meiti/Image 3.png'
+          }, {
+            id: 'm4',
+            url: './resource/images/logo/meiti/Image 4.png'
+          }, {
+            id: 'm5',
+            url: './resource/images/logo/meiti/Image 5.png'
+          }, {
+            id: 'm6',
+            url: './resource/images/logo/meiti/Image 6.png'
+          }, {
+            id: 'm7',
+            url: './resource/images/logo/meiti/Image 7.png'
+          }, {
+            id: 'm8',
+            url: './resource/images/logo/meiti/Image 8.png'
+          }, {
+            id: 'm9',
+            url: './resource/images/logo/meiti/Image 9.png'
+          }, {
+            id: 'm10',
+            url: './resource/images/logo/meiti/Image 10.png'
+          }, {
+            id: 'm11',
+            url: './resource/images/logo/meiti/Image 11.png'
+          }, {
+            id: 'm12',
+            url: './resource/images/logo/meiti/Image 12.png'
+          }],
+         }
+      },
+
+      methods: {
+        setClass(value) {
+          let obj = {ticketdeep: true}
+          obj[""+`${value}`] = true
+          return obj
+        },
+        buyticket(type) {
+          if (type === 1) {
+            window.open("https://www.huodongxing.com/event/5518114866900")
+          } else if (type === 2) {
+            window.open("https://www.huodongxing.com/event/4518069457000")
+          }
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
